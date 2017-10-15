@@ -22,7 +22,13 @@ config(['$locationProvider', '$routeProvider', function($locationProvider, $rout
   }).when('/forms', {
     templateUrl: 'pages/forms/form.html',
     controller: 'FormController'
+  }).when('/booking', {
+    templateUrl: 'pages/booking/booking.html',
+    controller: 'BookingController'
+  }).when('/pickupallocation', {
+    templateUrl: 'pages/pickupallocation/pickupallocation.html',
+    controller: 'PickupallocationController'
   })
-  .otherwise({redirectTo: '/view1'});
+  .otherwise({redirectTo: '/dashboard'});
 }]);
  
