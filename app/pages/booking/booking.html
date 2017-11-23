@@ -66,25 +66,28 @@
                    <div class="form-group col-lg-12">
                         <label  class="col-lg-4  control-label">A/c Code</label>
                         <div class="col-lg-8">
-                            <input type="text" class="form-control1"   >
+                            <!-- <input type="text" class="form-control1"   > -->
+                            <tags-input ng-model="acCode">
+                             <auto-complete source="loadTags($query)"></auto-complete>
+                             </tags-input>
                         </div>
                    </div>
                    <div class="form-group col-lg-12">
                         <label  class="col-lg-4  control-label">Reference No</label>
                         <div class="col-lg-8">
-                            <input type="text" class="form-control1"   >
+                            <input type="text" class="form-control1"  ng-model="referenceNo" >
                         </div>
                    </div>
                    <div class="form-group col-lg-12">
                         <label  class="col-lg-4  control-label">Co. Name</label>
                         <div class="col-lg-8">
-                            <input type="text" class="form-control1"   >
+                            <input type="text" class="form-control1"  ng-model="coName"  >
                         </div>
                    </div>
                    <div class="form-group col-lg-12">
                         <label  class="col-lg-4  control-label">Contact Person</label>
                         <div class="col-lg-8">
-                            <input type="text" class="form-control1"   >
+                            <input type="text" class="form-control1"  ng-model="contactPerson" >
                         </div>
                    </div>
                    <div class="form-group col-lg-12">

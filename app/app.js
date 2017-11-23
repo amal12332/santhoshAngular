@@ -4,7 +4,8 @@
 angular.module('myApp', [
   'ngRoute',
    'myApp.version',
-   'smart-table'
+   'smart-table',
+   "ngTagsInput",
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   // $locationProvider.hashPrefix('!');
